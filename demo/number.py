@@ -9,3 +9,6 @@ a = 'ABC'
 b = a
 a = 'XYZ'
 print(b)
+
+
+assert 100 > 0
