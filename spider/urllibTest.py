@@ -2,10 +2,14 @@
 import urllib.request
 import urllib.parse
 
+# 直接打开url
 response = urllib.request.urlopen("https://www.lagou.com/zhaopin/Java/")
 print(response.read())
 print("---------------------------")
 
+request = urllib.request.Request("https://www.lagou.com/zhaopin/Java/")
+urllib.request.urlopen()
+print("---------------------------")
 url = "http://fanyi.youdao.com/translate?smartresult=dict&smartresult=rule&smartresult=ugc&sessionFrom=null"
 formdata = {
     "type":"AUTO",
